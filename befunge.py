@@ -1,4 +1,5 @@
 #!/usr/bin/python
+from __future__ import print_function
 import re
 import random
 import sys
@@ -105,10 +106,16 @@ def run_code():
 				the_field.change_direction("down") if pop(stack) == 0 else the_field.change_direction("up")
 			elif the_field.current_char() == ".":
 				outint = str(pop(stack))
-				print(outint, end="")
+				try:
+					print(repr(outint).replace("'", ""), end="")
+				except Exception:
+					print(ascii(outint).replace("'", ""), end="")
 			elif the_field.current_char() == ",":
 				outtext = chr(pop(stack))
-				print(outtext, end="")
+				try:
+					print(repr(outtext).replace("'", "").replace("\\n", "\n"), end="")
+				except Exception:
+					print(ascii(outtext).replace("'", "").replace("\\n", "\n"), end="")
 			elif the_field.current_char() == ":":
 				stack.extend([pop(stack)]*2)
 			elif the_field.current_char() == "#":

@@ -9,3 +9,4 @@ Befunge-93 is a two-dimensional esoteric programming language in the Funge-famil
 
 ## Todo
 - ~~Implement an [interpreter](https://github.com/johanasplund/befunge-93)~~
+- Make the output cleaner and without numerous unicode-characters

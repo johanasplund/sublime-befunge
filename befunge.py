@@ -46,8 +46,8 @@ class Field(object):
 	def current_char(self):
 		return self.code[self.xy[1] % self.Y][self.xy[0] % self.X]
 
-	def read_unichr(self, bl):
-		self.read = bl
+	def read_unichr(self, textmode):
+		self.read = textmode
 
 	def get_char(self, xget, yget):
 		return self.code[yget % self.Y][xget % self.X]

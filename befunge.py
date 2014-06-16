@@ -113,9 +113,9 @@ def run_code():
 			elif the_field.current_char() == ",":
 				outtext = chr(pop(stack))
 				try:
-					print(repr(outtext).replace("'", "").replace("\\n", "\n"), end="")
+					print(repr(outtext).replace("'", "").replace("\\n", "\n").replace("\\t", "\t"), end="")
 				except Exception:
-					print(ascii(outtext).replace("'", "").replace("\\n", "\n"), end="")
+					print(ascii(outtext).replace("'", "").replace("\\n", "\n").replace("\\t", "\t"), end="")
 			elif the_field.current_char() == ":":
 				stack.extend([pop(stack)]*2)
 			elif the_field.current_char() == "#":

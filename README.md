@@ -1,7 +1,7 @@
 Befunge-93 for Sublime Text
 ===============
 
-This package provides syntax highlighting and an interpreter for the esoteric programming language Befunge-93 for Sublime Text 2 and 3 written in Python. The syntax highlighting is loosely based on [Pygments](http://pygments.org/).
+This package provides syntax highlighting and an interpreter for the esoteric programming language Befunge-93 for Sublime Text 2 and 3 written in Python. The syntax highlighting is loosely based on [Pygments](http://pygments.org/). I have not done any extensive testing with Sublime Text 2 so while it should work properly, I can not assure it.
 
 A standalone visual interpreter written in Python and pygame is found at https://github.com/johanasplund/befunge-93.
 

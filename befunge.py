@@ -131,6 +131,7 @@ def run_code():
 					instring = list(input("Put a string in the stack: "))
 					instring.append(-1)
 					instring = instring[::-1]
+					stack.append(ord(instring.pop()))
 				else:
 					if instring[len(instring)-1] == -1:
 						stack.append(int(instring.pop()))

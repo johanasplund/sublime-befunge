@@ -11,8 +11,8 @@ Befunge-93 is a two-dimensional esoteric programming language in the Funge-famil
 
 Install via [Package Control](https://sublime.wbond.net/packages/Package%20Control) or download the latest source at [github](https://github.com/johanasplund/sublime-befunge/), and put all files in `Packages/Befunge-93`. The Packages folder is located at
 - OSX: `~/Library/Application Support/Sublime Text X/Packages/`
-- Linux `~/.Sublime Text X/Packages/`
-- Windows `%APPDATA%/Sublime Text X/Packages/`
+- Linux `~/.config/Sublime Text X/Packages/`
+- Windows `%UserProfile%\AppData\Roaming\Sublime Text X\Packages\`
 
 ## Todo
 - ~~Implement an [interpreter](https://github.com/johanasplund/befunge-93)~~

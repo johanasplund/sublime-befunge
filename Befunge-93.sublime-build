@@ -1,5 +1,5 @@
 {
-	"shell_cmd": "python \"$packages\"/Befunge-93/befunge.py \"$file\" ",
+	"shell_cmd": "python \"$packages\"/Befunge-93/Befunge-93.py \"$file\" ",
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 	"selector": "source.befunge"
 }

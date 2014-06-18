@@ -71,7 +71,7 @@ def run_code():
 	ops = {"+": lambda x1, x2: stack.append(x1 + x2),
 			"-": lambda x1, x2: stack.append(x2 - x1),
 			"*": lambda x1, x2: stack.append(x1 * x2),
-			"/": lambda x1, x2: stack.append(floor(float(x2)/float(x1))),
+			"/": lambda x1, x2: stack.append(int(floor(float(x2)/float(x1)))),
 			"%": lambda x1, x2: stack.append(x2 % x1),
 			"`": lambda x1, x2: stack.append(1) if x2 > x1 else stack.append(0),
 			"\\": lambda x1, x2: stack.extend([x1, x2]),
